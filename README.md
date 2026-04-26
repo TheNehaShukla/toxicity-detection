@@ -4,7 +4,7 @@
 
 **Neha Shukla and Andri Kadaifciu**
 
-## Project Motivation
+## What It Does & Project Motivation
 
 This project aims to build and evaluate a toxicity classification system for text input by fine-tuning a pretrained DistillBERT model on the ToxiChat dataset. This project has three main goals. First, we compare a standard text-only classifier with a policy-conditioned model to find out whether explicit rules improve performance. We then evaluate how three different policy designs, A which can be seen as "strict", B as "balanced", and C as "lenient" affect metrics such as precision, accuracy, and recall. Finally, we compare our fine-tuned model to "judge" API model Claude to assess differences in performance. These experiments will help us understand how both model design and policy shape our experimental outcomes.
 

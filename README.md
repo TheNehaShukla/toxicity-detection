@@ -87,6 +87,15 @@ In data points #23 and #27, the no_policy model had a False Negative and classif
 
 In data point #40, the no_policy model had a False Positive and classified this safe prompt as toxic because it applied a very rough logic to classifying safety and didn't pick up on the fact that there were no safety violations in that prompt (although definitely a strange thing to prompt a model). Again, the policy_A model was able to pick up on this and correctly classified it as safe. 
 
+### Training Curves
+Including our training and validation loss curves (already included in our Jupyter Notebooks) in case of difficulty viewing them in the Phase 1 code:
+
+<img width="576" height="455" alt="Unknown" src="https://github.com/user-attachments/assets/37dff2b9-2ee1-4bdd-be23-ac1d8cec76b2" />
+<img width="576" height="455" alt="Unknown-1" src="https://github.com/user-attachments/assets/2ebb1742-26ba-48e2-acfd-f16f43fca3c8" />
+<img width="575" height="455" alt="Unknown-2" src="https://github.com/user-attachments/assets/89c704c1-c7f5-4f39-95af-dbd42743ec16" />
+<img width="576" height="455" alt="Unknown-3" src="https://github.com/user-attachments/assets/ced13f00-0ff2-41d4-8bb1-0f95e21d7d61" />
+<img width="575" height="455" alt="Unknown-4" src="https://github.com/user-attachments/assets/a6f3e0fb-e550-43a4-807e-d1cc03a1d841" />
+
 ## Video Links
 - Demo video link: 
 - Technical walkthrough video link:

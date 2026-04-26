@@ -2,12 +2,12 @@
 
 ## 1. Project Overview
 
-This project consists of two main phases:
+This project contains two main phases:
 
-* Phase 1: Fine-tuning DistilBERT for a downstream NLP task.
-* Phase 2: Evaluating outputs using an LLM-as-a-judge framework.
+* Phase 1: Fine-tuning DistilBERT for toxicity detection of user prompts to an LLM
+* Phase 2: Using LLM-as-judge to automate classification for a smaller batch of user prompts
 
-Both phases are implemented as Jupyter notebooks.
+We implemented both phases with Jupyter notebooks. 
 
 ## 2. Prerequisites
 
@@ -19,7 +19,7 @@ Make sure you have the following installed:
 
 ## 3. Installation
 
-Step 1: Clone the repository
+Step 1: Clone the repo
 
 ```bash
 git clone <your-repo-url>
@@ -57,14 +57,11 @@ Then open and run the notebooks in order:
 1. `Phase 1 - Fine-tuning DistillBERT.ipynb`
 2. `Phase 2 - LLM-as-judge.ipynb`
 
-Make sure to run all cells sequentially.
+Make sure to run all of the cells in order.
 
 ## 5. External APIs / Services
 
-This project uses external API calls to Google Gemini's free tier. Create an 
-This project may use external APIs (e.g., OpenAI API) for evaluation.
-
-Setting up API Keys
+This project uses external API calls to Google Gemini's free tier, so follow these steps to create your own API key with Gemini:
 
 1. Log into Google AI Studio with your existing Gmail account.
 2. Create a new Gemini Project.
@@ -76,7 +73,7 @@ Setting up API Keys
 Phase 1 Testing
 
 * Run all cells in the Phase 1 notebook.
-* Verify that:
+* Make sure that:
 
   * The dataset loads correctly.
   * The model trains without errors.
@@ -85,7 +82,7 @@ Phase 1 Testing
 Phase 2 Testing
 
 * Run all cells in the Phase 2 notebook.
-* Ensure that:
+* Make sure that:
 
   * The API key is correctly set.
   * Model outputs are generated.

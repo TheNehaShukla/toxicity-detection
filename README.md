@@ -40,6 +40,7 @@ ANALYSIS HERE
 - Phase 2 code: https://colab.research.google.com/drive/1bhOgPr2AzDx97Aaxbp4tgIQSI2_aazOB?usp=sharing
 
 ## Quick Start
+Read the full setup.md file for more details on how to set up and run this project!
 
 Install dependencies: Run script in the following order as outlined by the notebook numbering:
 1. Imports + Global Variables

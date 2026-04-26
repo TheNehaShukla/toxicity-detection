@@ -31,6 +31,8 @@ Versions Evaluated:
 ## Evaluation and Key Findings
 The models are evaluated using accuracy, precision, recall, F1 score, confusion matrix, and error analysis of false positives/false negatives.
 
+<img width="471" height="218" alt="comparison_table" src="https://github.com/user-attachments/assets/d6e64690-7c7d-4b63-af2c-1f2a96d54824" />
+
 ANALYSIS HERE
 
 ## Video Links

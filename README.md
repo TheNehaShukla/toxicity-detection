@@ -43,3 +43,7 @@ Install dependencies: Run script in the following order as outlined by the noteb
 8. Perform error analysis based on the results.
 
 ## Individual Contributions
+
+- Collaboratively researched the problem statement, motivation, and structure of the project. Collaboratively wrote the code for assessing the metrics and accuracy, and deciding what approaches to take iteratively when seeing results from early model runs
+- Andri: wrote the code for the fine-tuning of DistillBERT in Phase 1
+- Neha: wrote the code for the LLM-as-judge detection in Phase 2

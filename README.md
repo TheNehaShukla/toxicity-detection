@@ -8,6 +8,8 @@
 
 This project aims to build and evaluate a toxicity classification system for text input by fine-tuning a pretrained DistillBERT model on the ToxiChat dataset. This project has three main goals. First, we compare a standard text-only classifier with a policy-conditioned model to find out whether explicit rules improve performance. We then evaluate how three different policy designs, A which can be seen as "strict", B as "balanced", and C as "lenient" affect metrics such as precision, accuracy, and recall. Finally, we compare our fine-tuned model to "judge" API model Claude to assess differences in performance. These experiments will help us understand how both model design and policy shape our experimental outcomes.
 
+Our main project goal was to probe on the question: can stricter safety guardrails help detect toxic content early, leading to safer LLM interactions? We wanted to see if using policy-conditioned models of different types, long vs. short, generic AI-generated vs. social science research-backed, and policy vs. no policy at all, would make a difference in the effectiveness of toxicity detection. 
+
 Versions Evaluated:
 
 - Majority-class baseline: Always predicts the majority class, which in this dataset is "safe".

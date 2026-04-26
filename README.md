@@ -67,33 +67,33 @@ Install dependencies: Run script in the following order as outlined by the noteb
 We included some extra findings in case they might be interesting! Below are lists of the models ranked by our various metrics to visualize the variation in strengths between the different models we built/tested in Phase 1. 
 
 Ranked Accuracy Scores:
-v1_baseline: 0.964664
-v1_b_weighted: 0.959364
-v2_policy_A: 0.955830
-v2_policy_B: 0.955830
-v2_policy_C: 0.955830
-baseline_majority: 0.867491
+1. v1_baseline: 0.964664
+2. v1_b_weighted: 0.959364
+3. v2_policy_A: 0.955830
+4. v2_policy_B: 0.955830
+5. v2_policy_C: 0.955830
+6. baseline_majority: 0.867491
 
 Ranked Precision Scores: 
-v1_baseline: 0.887324
-v2_policy_C: 0.837838
-v1_b_weighted: 0.833333
-v2_policy_A: 0.820513
-v2_policy_B: 0.812500
-baseline_majority: 0
+1. v1_baseline: 0.887324
+2. v2_policy_C: 0.837838
+3. v1_b_weighted: 0.833333
+4. v2_policy_A: 0.820513
+5. v2_policy_B: 0.812500
+6. baseline_majority: 0
 
 Ranked Recall Scores: 
-v2_policy_B: 0.866667
-v1_b_weighted: 0.866667
-v2_policy_A: 0.853333
-v1_baseline: 0.840000
-v2_policy_C: 0.826667
-baseline_majority: 0
+1. v2_policy_B: 0.866667
+2. v1_b_weighted: 0.866667
+3. v2_policy_A: 0.853333
+4. v1_baseline: 0.840000
+5. v2_policy_C: 0.826667
+6. baseline_majority: 0
 
 Ranked F1 Scores: 
-v1_baseline: 0.863014
-v1_b_weighted: 0.849673
-v2_policy_B: 0.838710
-v2_policy_A: 0.836601
-v2_policy_C: 0.832215
-baseline_majority: 0
+1. v1_baseline: 0.863014
+2. v1_b_weighted: 0.849673
+3. v2_policy_B: 0.838710
+4. v2_policy_A: 0.836601
+5. v2_policy_C: 0.832215
+6. baseline_majority: 0

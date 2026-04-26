@@ -4,9 +4,9 @@
 
 **Neha Shukla and Andri Kadaifciu**
 
-## What It Does & Project Motivation
-
 Short description: Our project classifies user prompts to an LLM as toxic or safe, so that LLM interactions can be safer in the future. Our main methodology includes fine-tuning a pretrained transformer language model (adapting output heads) as a toxicity classifier with and without custom safety policies (Policy A, B, C), calling state-of-the-art transformer models for a classification task, and comparing these results with a set of baselines. Our key finding was that incorporating a custom safety policy did not improve the effectiveness of the pretrained BERT classifier but it significantly increased the effectiveness in  SOTA models' classification. 
+
+## What It Does & Project Motivation
 
 This project aims to build and evaluate a toxicity classification system for text input by fine-tuning a pretrained DistillBERT model on the ToxiChat dataset. This project has three main goals. First, we compare a standard text-only classifier with a policy-conditioned model to find out whether explicit rules improve performance. We then evaluate how three different policy designs, A which can be seen as "strict", B as "balanced", and C as "lenient" affect metrics such as precision, accuracy, and recall. Finally, we compare our fine-tuned model to "judge" API model Claude to assess differences in performance. These experiments will help us understand how both model design and policy shape our experimental outcomes.
 

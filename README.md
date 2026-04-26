@@ -33,6 +33,10 @@ ANALYSIS HERE
 - Demo video link: 
 - Technical walkthrough video link:
 
+## Colab Links
+- Phase 1 code: https://colab.research.google.com/drive/1iiGKwbsunDs0EH5lzOmlCktRop4TeFcl?usp=sharing
+- Phase 2 code: https://colab.research.google.com/drive/1bhOgPr2AzDx97Aaxbp4tgIQSI2_aazOB?usp=sharing
+
 ## Quick Start
 
 Install dependencies: Run script in the following order as outlined by the notebook numbering:

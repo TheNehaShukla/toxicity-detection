@@ -10,6 +10,8 @@ This project aims to build and evaluate a toxicity classification system for tex
 
 Our main project goal was to probe on the question: can stricter safety guardrails help detect toxic content early, leading to safer LLM interactions? We wanted to see if using policy-conditioned models of different types, long vs. short, generic AI-generated vs. social science research-backed, and policy vs. no policy at all, would make a difference in the effectiveness of toxicity detection. 
 
+*Note: because we used ipywidgets' progress bars and have lots of printed output in our Phase 1 code file, it isn't rendering natively in the GitHub viewer, so please download that file to access it including our printed outputs and training curves!*
+
 Versions Evaluated:
 
 - Majority-class baseline: Always predicts the majority class, which in this dataset is "safe".

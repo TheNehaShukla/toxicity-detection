@@ -1,13 +1,11 @@
 # Setup Guide
 
-This document explains how to install, configure, and run this project. It also includes instructions for testing the system, including components that rely on external APIs.
-
 ## 1. Project Overview
 
 This project consists of two main phases:
 
-* **Phase 1:** Fine-tuning DistilBERT for a downstream NLP task.
-* **Phase 2:** Evaluating outputs using an LLM-as-a-judge framework.
+* Phase 1: Fine-tuning DistilBERT for a downstream NLP task.
+* Phase 2: Evaluating outputs using an LLM-as-a-judge framework.
 
 Both phases are implemented as Jupyter notebooks.
 
@@ -21,14 +19,14 @@ Make sure you have the following installed:
 
 ## 3. Installation
 
-### Step 1: Clone the repository
+Step 1: Clone the repository
 
 ```bash
 git clone <your-repo-url>
 cd <your-repo-name>
 ```
 
-### Step 2: Create a virtual environment
+Step 2: Create a virtual environment
 
 Using venv:
 
@@ -38,7 +36,7 @@ source venv/bin/activate  # macOS/Linux
 venv\\Scripts\\activate     # Windows
 ```
 
-### Step 3: Install dependencies
+Step 3: Install dependencies
 
 Install the core dependencies manually:
 
@@ -48,7 +46,7 @@ pip install torch transformers datasets scikit-learn pandas numpy matplotlib jup
 
 ## 4. Running the Project
 
-### Launch Jupyter Notebook
+Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
@@ -66,7 +64,7 @@ Make sure to run all cells sequentially.
 This project uses external API calls to Google Gemini's free tier. Create an 
 This project may use external APIs (e.g., OpenAI API) for evaluation.
 
-### Setting up API Keys
+Setting up API Keys
 
 1. Log into Google AI Studio with your existing Gmail account.
 2. Create a new Gemini Project.
@@ -75,7 +73,7 @@ This project may use external APIs (e.g., OpenAI API) for evaluation.
 
 ## 6. How to Test the System
 
-### Phase 1 Testing
+Phase 1 Testing
 
 * Run all cells in the Phase 1 notebook.
 * Verify that:
@@ -84,7 +82,7 @@ This project may use external APIs (e.g., OpenAI API) for evaluation.
   * The model trains without errors.
   * Evaluation metrics (e.g., accuracy, F1 score) are produced.
 
-### Phase 2 Testing
+Phase 2 Testing
 
 * Run all cells in the Phase 2 notebook.
 * Ensure that:

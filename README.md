@@ -33,7 +33,26 @@ The models are evaluated using accuracy, precision, recall, F1 score, confusion 
 
 <img width="471" height="218" alt="comparison_table" src="https://github.com/user-attachments/assets/d6e64690-7c7d-4b63-af2c-1f2a96d54824" />
 
-ANALYSIS HERE
+# -------
+
+### Phase 1: Fine-Tuning DistilBERT Models
+
+Overall, all fine-tuned models outperformed the majority class baseline, which as we expected confirms that our models are learning meaningful patterns beyond just predicting the dominant class. The baseline achieves an accuracy of 0.867 due to the class imbalance towards the “safe” class but fails to  identify toxic content with precision, recall, and F1 scores of 0, which could be incredibly problematic for missing instances of actual toxic content.
+
+### Baseline vs. Unweighted Text-Only DistilBERT vs. Weighted Text-Only DistilBERT
+The v1_baseline model achieves the highest performance with an accuracy score of 0.965 and F1 of 0.863; this indicates that the model is effective at detecting toxicity. However, it is important to note that this model did not consider the class imbalance which may skew model behavior since the data overrepresents the “safe” class, which explains why the F1 is lower while the accuracy is higher from encountering a larger volume of “safe” class data. 
+
+The v1_b_weighted takes into account class imbalance and becomes more sensitive to toxic content which is reflected in seeing fewer false negatives; however, this also led the model to generate more false positives, meaning flag more safe content as toxic. This model version is especially preferable for a content moderation perspective because it is better to over-flag content, instead of missing a potentially dangerous or explicit piece of toxic content. 
+
+### Weighted Text-Only DistilBERT vs. Policy Conditioned Model
+
+All policy-conditioned models (v2_policy_A, v2_policy_B, v2_policy_C) performed slightly worse than the text-only baseline, with accuracy dropping to 0.956 across all policies. This suggests that adding policy text does not improve performance, and may introduce noise to the initial classification task. 
+
+Across the different policies, Policy A was directly pulled from the “Understanding Generative AI Risks for Youth: A Taxonomy Based on Empirical Data” by Yu, et al. paper by directly pulling the most relevant risks defined in their appendix, specifically GAI System Toxic Content Generation Risk, Simulated Toxic Interaction Risk, Malicious Exploitation Risk, and Harmful Behavioral Influence Risk. Policy B, and C were generated from ChatGPT and got progressively shorter/less specific. Overall, Policy B performed the best, suggesting that a medium balance between length and specificity could be ideal to optimize model performance and minimize what the model might consider as possible noise.
+
+### Part One Key-Takeaways
+The standard text-only DistilBERT model achieved the best overall performance; though the weighted text-only version (v_1) performed slightly worse than the unweighted text-only (v_1b), it is the most trustworthy as it accounts for class imbalance. Overall, we found that adding policy text did not improve results. Comparing out key metrics, we found that due to the class imbalance the accuracy metric can mask failure on the minority (toxic) class which is why relying on additional metrics such as F1, precision, and recall was necessary. 
+
 
 ## Video Links
 - Demo video link: 

@@ -100,7 +100,7 @@ Including our training and validation loss curves (already included in our Jupyt
 
 ## Video Links
 - Demo video link: https://www.youtube.com/watch?v=ONDn9pxvm4o 
-- Technical walkthrough video link:
+- Technical walkthrough video link: https://youtu.be/csLb-RePJ84
 
 ## Colab Links
 - Phase 1 code: https://colab.research.google.com/drive/1iiGKwbsunDs0EH5lzOmlCktRop4TeFcl?usp=sharing

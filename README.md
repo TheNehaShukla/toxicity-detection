@@ -99,7 +99,7 @@ Including our training and validation loss curves (already included in our Jupyt
 <img width="575" height="455" alt="Unknown-4" src="https://github.com/user-attachments/assets/a6f3e0fb-e550-43a4-807e-d1cc03a1d841" />
 
 ## Video Links
-- Demo video link: 
+- Demo video link: https://www.youtube.com/watch?v=ONDn9pxvm4o 
 - Technical walkthrough video link:
 
 ## Colab Links
